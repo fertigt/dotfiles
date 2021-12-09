@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+alias ls="exa --icons -a"
+alias ll="ls -l"
