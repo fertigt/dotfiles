@@ -17,3 +17,5 @@ zsh_add_plugin "MichaelAquilina/zsh-auto-notify" "auto-notify"
 zsh_add_plugin "MichaelAquilina/zsh-you-should-use" "you-should-use"
 export YSU_MESSAGE_POSITION="after"
 export YSU_MODE=BESTMATCH
+
+zsh_add_plugin "agkozak/zsh-z"
