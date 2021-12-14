@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Tobias Fertig
+	email = tobias.fertig@fhws.de
+[core]
+	excludesfile = /Users/fertigt/.gitignore_global
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
