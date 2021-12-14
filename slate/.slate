@@ -1,0 +1,83 @@
+#This is the .slate file of Tobias Fertig.
+#This file is supposed to be used in combination with karabiner-elements.
+
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
+config windowHintsFontColor "3;3;3;1.0"
+
+alias hyper ctrl;shift;alt;cmd
+
+# Resize Bindings
+#bind right:ctrl;alt  resize +10% +0
+#bind left:ctrl;alt   resize -10% +0
+#bind up:ctrl;alt     resize +0   -10%
+#bind down:ctrl;alt   resize +0   +10%
+#bind right:shift;alt  resize -10% +0 bottom-right
+#bind left:shift;alt   resize +10% +0 bottom-right
+#bind up:shift;alt     resize +0   +10% bottom-right
+#bind down:shift;alt   resize +0   -10% bottom-right
+
+# Nudge Bindings
+#bind right:shift;alt nudge +10% +0
+#bind left:shift;alt  nudge -10% +0
+#bind up:shift;alt    nudge +0   -10%
+#bind down:shift;alt  nudge +0   +10%
+
+# Throw Bindings
+#bind 1:${hyper}         throw 0 resize
+#bind 2:${hyper}         throw 1 resize
+#bind 3:${hyper}         throw 2 resize
+bind right:${hyper} throw right resize
+bind left:${hyper}  throw left  resize
+bind up:${hyper}    throw up    resize
+bind down:${hyper}  throw down  resize
+
+# Focus Bindings
+#bind up:cmd;alt   focus behind
+#bind down:cmd;alt focus behind
+
+# Window Hints
+#bind r:${hyper} hint ASDFGHJKLQWERTZUIOPYXCVBNM
+
+# Abstract positions
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+alias lefthalf move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+alias righthalf move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+alias topleft corner top-left resize:screenSizeX/2;screenSizeY/2
+alias topright corner top-right resize:screenSizeX/2;screenSizeY/2
+alias bottomleft corner bottom-left resize:screenSizeX/2;screenSizeY/2
+alias bottomright corner bottom-right resize:screenSizeX/2;screenSizeY/2
+
+alias topmostright corner top-right resize:screenSizeX/4;screenSizeY/2
+alias topmiddleright move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/4;screenSizeY/2
+alias topmiddle move screenOriginX+screenSizeX*0.25;screenOriginY screenSizeX/2;screenSizeY/2
+alias topmiddleleft move screenOriginX+screenSizeX*0.25;screenOriginY screenSizeX/4;screenSizeY/2
+alias topmostleft corner top-left resize:screenSizeX/4;screenSizeY/2
+
+alias bottommostright corner bottom-right resize:screenSizeX/4;screenSizeY/2
+alias bottommiddleright move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2 screenSizeX/4;screenSizeY/2
+alias bottommiddle move screenOriginX+screenSizeX*0.25;screenOriginY+screenSizeY/2 screenSizeX/2;screenSizeY/2
+alias bottommiddleleft move screenOriginX+screenSizeX*0.25;screenOriginY+screenSizeY/2 screenSizeX/4;screenSizeY/2
+alias bottommostleft corner bottom-left resize:screenSizeX/4;screenSizeY/2
+
+alias mostleft move screenOriginX;screenOriginY screenSizeX*0.25;screenSizeY
+alias middleleft move screenOriginX+screenSizeX*0.25;screenOriginY screenSizeX*0.25;screenSizeY
+alias middle move screenOriginX+screenSizeX*0.25;screenOriginY screenSizeX/2;screenSizeY
+alias middleright move screenOriginX+screenSizeX/2;screenOriginY screenSizeX*0.25;screenSizeY
+alias mostright move screenOriginX+screenSizeX*0.75;screenOriginY screenSizeX*0.25;screenSizeY
+
+# Location Bindings
+bind z:${hyper} chain ${bottommostleft} | ${bottomleft}
+bind x:${hyper} chain push bottom bar-resize:screenSizeY/2 | ${bottommiddle} | ${bottommiddleleft} | ${bottommiddleright}
+bind c:${hyper} chain ${bottommostright} | ${bottomright}
+bind a:${hyper} chain ${lefthalf} | ${mostleft} | ${middleleft}
+bind s:${hyper} chain move screenOriginX+(screenSizeX/2-(screenSizeX*0.328125));screenOriginY+(screenSizeY/2-(screenSizeY*0.36458))  screenSizeX*0.65625;screenSizeY*0.72917 | ${full} | ${middle}
+bind d:${hyper} chain ${righthalf} | ${middleright} | ${mostright}
+bind q:${hyper} chain ${topmostleft} | ${topleft}
+bind w:${hyper} chain push top bar-resize:screenSizeY/2 | ${topmiddle} | ${topmiddleleft} | ${topmiddleright}
+bind e:${hyper} chain ${topmostright} | ${topright}
