@@ -11,6 +11,6 @@ zstyle ':vcs_info:git:*' formats " %B%{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yello
 precmd() {
     vcs_info
 
-    PROMPT="%(?.%F{green}√.%F{red}?%?)%f %B%F{white}%3~  "
+    PROMPT="%(?.%F{green}√.%F{red}?%?)%f %B%F{white}%3~ %B "
     RPROMPT="${vcs_info_msg_0_}"
 }

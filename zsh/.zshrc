@@ -8,9 +8,9 @@ setopt autocd
 
 zle_highlight=('paste:none')
 
-# todo lazy loading
-# Usage: zsh_install_plugin( repo_url, plugin_name)
-function zsh_install_plugin() {
+# Usage: zsh_load_plugin repo_url plugin_name
+#        or just zsh_load_plugin repo_url
+function zsh_load_plugin() {
     PLUGIN_REPO_NAME=$(echo $1 | cut -d "/" -f 2)
     if [ $# -eq 2 ]; then
         PLUGIN_NAME=$2
@@ -27,24 +27,24 @@ function zsh_install_plugin() {
 }
 
 # Plugins
-source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"
+zsh_load_plugin "zsh-users/zsh-autosuggestions"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=250'
 
-source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
+zsh_load_plugin "zsh-users/zsh-syntax-highlighting"
 
-source "$ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh"
+zsh_load_plugin "zsh-users/zsh-history-substring-search"
 bindkey "^k" history-substring-search-up
 bindkey "^j" history-substring-search-down
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 
-source "$ZDOTDIR/plugins/zsh-auto-notify/auto-notify.plugin.zsh"
+zsh_load_plugin "MichaelAquilina/zsh-auto-notify" "auto-notify"
 
-source "$ZDOTDIR/plugins/zsh-you-should-use/you-should-use.plugin.zsh"
+zsh_load_plugin "MichaelAquilina/zsh-you-should-use" "you-should-use"
 export YSU_MESSAGE_POSITION="after"
 export YSU_MODE=BESTMATCH
 
-source "$ZDOTDIR/plugins/zsh-z/zsh-z.plugin.zsh"
+zsh_load_plugin "agkozak/zsh-z"
 
 # Aliases
 alias ls="exa --icons -a --group-directories-first"
