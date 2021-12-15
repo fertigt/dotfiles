@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+autoload -Uz vcs_info
+autoload -U colors && colors
+
+zstyle ':vcs_info:*' enable git
+zstyle ':vcs_info:*' check-for-changes false
+zstyle ':vcs_info:*' check-for-staged-changes true
+zstyle ':vcs_info:git:*' formats " %B%{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]%}%{$fg[magenta]%} %b%{$fg[blue]%})"
+
+precmd() {
+    vcs_info
+
+    PROMPT="%(?.%F{green}√.%F{red}?%?)%f %B%F{white}%3~  "
+    RPROMPT="${vcs_info_msg_0_}"
+}

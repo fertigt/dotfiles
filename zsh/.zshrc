@@ -30,7 +30,7 @@ function zsh_install_plugin() {
 source "$ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=250'
 
-source "$ZDOTDIR/plugins/zsh-syntax-highlight/zsh-syntax-highlight.plugin.zsh"
+source "$ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh"
 
 source "$ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.plugin.zsh"
 bindkey "^k" history-substring-search-up
@@ -50,3 +50,6 @@ source "$ZDOTDIR/plugins/zsh-z/zsh-z.plugin.zsh"
 alias ls="exa --icons -a --group-directories-first"
 alias ll="ls -l --git"
 alias lg="ll --tree -I .git --git-ignore"
+
+# Prompt
+source "$ZDOTDIR/zsh-prompt"
