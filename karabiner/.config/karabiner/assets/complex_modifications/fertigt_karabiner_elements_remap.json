@@ -1,0 +1,1300 @@
+{
+  "title": "fertigt Custom Layout",
+  "rules":
+  [
+    {
+      "description": "Change caps_lock to command+control+option+shift. Change caps_lock to escape when pressed alone.",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "caps_lock",
+            "modifiers":
+            {
+              "optional":
+              [
+                "any"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "left_shift",
+              "modifiers":
+              [
+                "left_command",
+                "left_control",
+                "left_option"
+              ]
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "escape"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Exchange numbers and symbols.",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "1",
+            "modifiers":
+            {
+              "optional":
+              [
+                "caps_lock"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "1",
+              "modifiers":
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "2",
+            "modifiers":
+            {
+              "optional":
+              [
+                "caps_lock"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "2",
+              "modifiers":
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "3",
+            "modifiers":
+            {
+              "optional":
+              [
+                "caps_lock"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "l",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "4",
+            "modifiers":
+            {
+              "optional":
+              [
+                "caps_lock"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "4",
+              "modifiers":
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": 
+          {
+            "key_code": "5",
+            "modifiers": 
+            {
+              "optional": 
+              [
+               "caps_lock"
+              ]
+            }
+          },
+          "to": 
+          [
+            {
+              "key_code": "5",
+              "modifiers": 
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+            {
+                "from": {
+                    "key_code": "6",
+                    "modifiers": {
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "6",
+                        "modifiers": [
+                            "left_shift"
+                        ]
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "7",
+                    "modifiers": {
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "7",
+                        "modifiers": [
+                            "left_shift"
+                        ]
+                    }
+                ],
+                "type": "basic"
+            },
+        {
+          "from":
+          {
+            "key_code": "8",
+            "modifiers":
+            {
+              "optional":
+              [
+                "caps_lock"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "grave_accent_and_tilde"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "9",
+            "modifiers":
+            {
+              "optional":
+              [
+                "caps_lock"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "grave_accent_and_tilde",
+              "modifiers":
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": 
+          {
+            "key_code": "0",
+            "modifiers": 
+            {
+              "optional": 
+              [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": 
+          [
+            {
+              "key_code": "0",
+              "modifiers": 
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "hyphen",
+            "modifiers":
+            {
+              "optional":
+              [
+                "caps_lock"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "hyphen",
+              "modifiers":
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+            {
+                "from": {
+                    "key_code": "1",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "1"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "2",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "2"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "3",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "3"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "4",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "4"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "5",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "5"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "6",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "6"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "7",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "7"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "8",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "8"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "9",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "9"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "0",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "0"
+                    }
+                ],
+                "type": "basic"
+            },
+            {
+                "from": {
+                    "key_code": "0",
+                    "modifiers": {
+                        "mandatory": [
+                            "shift"
+                        ],
+                        "optional": [
+                            "caps_lock"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "0"
+                    }
+                ],
+                "type": "basic"
+            },
+        {
+          "from": 
+          {
+            "key_code": "hyphen",
+            "modifiers": 
+            {
+              "mandatory": 
+              [
+                "shift"
+              ],
+              "optional": 
+              [
+                "caps_lock"
+              ]
+            }
+          },
+          "to": 
+          [
+            {
+              "key_code": "hyphen"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "DasKeyboard:Basic Keys, Brackets, Curly Braces and Pipe.",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "left_command"
+          },
+          "to":
+          [
+            {
+              "key_code": "left_option"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "8",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "left_option"
+          },
+          "to":
+          [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "5",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "right_option"
+          },
+          "to":
+          [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "6",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "right_command"
+          },
+          "to":
+          [
+            {
+              "key_code": "right_option"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "9",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "right_control"
+          },
+          "to":
+          [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "7",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+     {
+      "description": "RazerOrnata:Basic Keys, Brackets, Curly Braces and Pipe.",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "non_us_backslash"
+          },
+          "to":
+          [
+            {
+              "key_code": "non_us_pound"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "non_us_pound"
+          },
+          "to":
+          [
+            {
+              "key_code": "comma",
+              "modifiers":
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "left_command"
+          },
+          "to":
+          [
+            {
+              "key_code": "left_option"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "8",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "left_option"
+          },
+          "to":
+          [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "5",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "right_option"
+          },
+          "to":
+          [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "6",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "application"
+          },
+          "to":
+          [
+            {
+              "key_code": "right_option"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "9",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "right_control"
+          },
+          "to":
+          [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "7",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Change shift to parentheses when pressed alone.",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "left_shift"
+          },
+          "to":
+          [
+            {
+              "key_code": "left_shift"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "8",
+              "modifiers":
+              [
+                "left_shift"
+              ]
+            }
+          ],
+            "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "right_shift"
+          },
+          "to":
+          [
+            {
+              "key_code": "right_shift"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "9",
+              "modifiers":
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Change command to brackets when pressed alone.",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "left_command"
+          },
+          "to":
+          [
+            {
+              "key_code": "left_command"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "5",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+            "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "right_command"
+          },
+          "to":
+          [
+            {
+              "key_code": "right_command"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "6",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Change option to curly braces when pressed alone.",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "left_option"
+          },
+          "to":
+          [
+            {
+              "key_code": "left_option"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "8",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+            "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "right_option"
+          },
+          "to":
+          [
+            {
+              "key_code": "right_option"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "9",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Change control to backslash when pressed alone.",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "left_control"
+          },
+          "to":
+          [
+            {
+              "key_code": "left_control"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "7",
+              "modifiers":
+              [
+                "left_option",
+                "left_shift"
+              ]
+            }
+          ],
+            "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "right_control"
+          },
+          "to":
+          [
+            {
+              "key_code": "right_control"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "7",
+              "modifiers":
+              [
+                "left_option",
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Change fn to pipe when pressed alone.",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "fn"
+          },
+          "to":
+          [
+            {
+              "key_code": "fn"
+            }
+          ],
+          "to_if_alone":
+          [
+            {
+              "key_code": "7",
+              "modifiers":
+              [
+                "left_option"
+              ]
+            }
+          ],
+            "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Switch ^ and <, because of wrong mapping due to german layout.",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "non_us_backslash",
+            "modifiers":
+            {
+              "optional":
+              [
+                "left_shift",
+                "right_shift"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "grave_accent_and_tilde"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "grave_accent_and_tilde",
+            "modifiers":
+            {
+              "optional":
+              [
+                "left_shift",
+                "right_shift"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "non_us_backslash"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Switch # to ;",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "backslash"
+          },
+          "to":
+          [
+            {
+              "key_code": "comma",
+              "modifiers":
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Switch < to #",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "grave_accent_and_tilde"
+          },
+          "to":
+          [
+            {
+              "key_code": "backslash"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Switch right option and L to paragraph",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "l",
+            "modifiers":
+            {
+              "mandatory":
+              [
+                "right_option"
+              ]
+            }
+          },
+          "to":
+          [
+            {
+              "key_code": "3",
+              "modifiers":
+              [
+                "left_shift"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Virtual NumPad",
+      "manipulators":
+      [
+        {
+          "from":
+          {
+            "key_code": "delete_forward"
+          },
+          "to":
+          [
+            {
+              "key_code": "keypad_1"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "end"
+          },
+          "to":
+          [
+            {
+              "key_code": "keypad_2"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "page_down"
+          },
+          "to":
+          [
+            {
+              "key_code": "keypad_3"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "insert"
+          },
+          "to":
+          [
+            {
+              "key_code": "keypad_4"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "home"
+          },
+          "to":
+          [
+            {
+              "key_code": "keypad_5"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "page_up"
+          },
+          "to":
+          [
+            {
+              "key_code": "keypad_6"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "print_screen"
+          },
+          "to":
+          [
+            {
+              "key_code": "keypad_7"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "scroll_lock"
+          },
+          "to":
+          [
+            {
+              "key_code": "keypad_8"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "pause"
+          },
+          "to":
+          [
+            {
+              "key_code": "keypad_9"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from":
+          {
+            "key_code": "right_shift"
+          },
+          "to":
+          [
+            {
+              "key_code": "keypad_0"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
