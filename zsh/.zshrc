@@ -46,6 +46,27 @@ export YSU_MODE=BESTMATCH
 
 zsh_load_plugin "agkozak/zsh-z"
 
+# Completions
+fpath=($ZDOTDIR/completions $fpath)
+autoload -Uz compinit && compinit -i
+# Disable sort when completing 'git checkout'
+zstyle ':completion:*:git-checkout:*' sort false
+
+source ~/.fzf.zsh
+_fzf_comprun() {
+  local command=$1
+  shift
+
+  case "$command" in
+    cd)           fzf "$@" --preview 'cat {}' ;;
+    *)            fzf "$@" ;;
+  esac
+}
+export FZF_DEFAULT_OPTS="--multi --cycle --height=80%"
+
+zsh_load_plugin "Aloxaf/fzf-tab"
+zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --icons $realpath -a --group-directories-first'
+
 # Aliases
 alias ls="exa --icons -a --group-directories-first"
 alias ll="ls -l --git"
