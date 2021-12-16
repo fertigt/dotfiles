@@ -71,6 +71,12 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --icons $realpath -a --group
 alias ls="exa --icons -a --group-directories-first"
 alias ll="ls -l --git"
 alias lg="ll --tree -I .git --git-ignore"
+alias gs="git status"
+alias gaa="git add ."
+alias ga="git add"
+alias gc="git commit -m"
+alias gpl="git pull"
+alias gps="git push"
 
 # Prompt
 source "$ZDOTDIR/zsh-prompt"
