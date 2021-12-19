@@ -1,0 +1,322 @@
+{
+    "title": "fertigt Key Mappings",
+    "rules": [ {
+        "description": "Change caps_lock to right cmd+ctrl+opt+shift. Change caps_lock to escape when pressed alone.",
+        "manipulators": [ {
+            "from": {  "key_code": "caps_lock", "modifiers": { "optional": [ "any" ] } },
+            "to": [ { "key_code": "right_shift", "modifiers": [ "right_command", "right_control", "right_option" ] } ],
+            "to_if_alone": [ { "key_code": "escape" } ],
+            "type": "basic"
+            } ]
+        },{
+        "description": "Open Mainly Used Apps",
+        "manipulators": [ {
+            "from": { "key_code": "u", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/WhatsApp.app'" } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "i", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/Google Chrome.app'" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "o", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/Airmail.app'" } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "p", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/Adobe Acrobat DC/Adobe Acrobat.app'" } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "j", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/Sublime Text.app'" } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "k", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/KeePassXC.app'" } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "l", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/IntelliJ Idea.app'" } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "semicolon", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/Signal.app'" } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "quote", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/Mattermost.app'" } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "v", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/Visual Studio Code.app'" } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "n", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/kitty.app'" } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "m", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "open -a '/Applications/Path Finder.app'" } ],
+            "type": "basic" 
+            } ]  
+        },{
+        "description": "Switch numbers and symbols; § to @; ( to <; ) to >",
+        "manipulators": [ {
+            "from": { "key_code": "1" },
+            "to": [ { "key_code": "1", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "1", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "1" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "2" },
+            "to": [ { "key_code": "2", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "2", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "2" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "3" },
+            "to": [ { "key_code": "l", "modifiers": [ "left_option" ] } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "3", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "3" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "4" },
+            "to": [ { "key_code": "4", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "4", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "4" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "5" },
+            "to": [ { "key_code": "5", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "5", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "5" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "6" },
+            "to": [ { "key_code": "6", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "6", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "6" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "7" },
+            "to": [ { "key_code": "7", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "7", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "7" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "8" },
+            "to": [ { "key_code": "grave_accent_and_tilde" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "8", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "8" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "9" },
+            "to": [ { "key_code": "grave_accent_and_tilde", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "9", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "9" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "0" },
+            "to": [ { "key_code": "0", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "0", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "0" } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "hyphen" },
+            "to": [ { "key_code": "hyphen", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"  
+            },{
+            "from": { "key_code": "hyphen", "modifiers": { "mandatory": [ "shift" ] } },
+            "to": [ { "key_code": "hyphen" } ],
+            "type": "basic"  
+            } ]
+        },{
+        "description": "Change shift, command, option, left control, and fn if pressed alone",
+        "manipulators": [ {
+            "from": { "key_code": "left_shift" },
+            "to": [ { "key_code": "left_shift" } ],
+            "to_if_alone": [ { "key_code": "8", "modifiers": [ "left_shift" ] } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "right_shift" },
+            "to": [ { "key_code": "right_shift" } ],
+            "to_if_alone": [ { "key_code": "9", "modifiers": [ "left_shift" ] } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "left_command" },
+            "to": [ { "key_code": "left_command" } ],
+            "to_if_alone": [ { "key_code": "5", "modifiers": [ "left_option" ] } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "right_command" },
+            "to": [ { "key_code": "right_command" } ],
+            "to_if_alone": [ { "key_code": "6", "modifiers": [ "left_option" ] } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "left_option" },
+            "to": [ { "key_code": "left_option" } ],
+            "to_if_alone": [ { "key_code": "8", "modifiers": [ "left_option" ] } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "right_option" },
+            "to": [ { "key_code": "right_option" } ],
+            "to_if_alone": [ { "key_code": "9", "modifiers": [ "left_option" ] } ],
+            "type": "basic" 
+            },{
+            "from": { "key_code": "left_control" },
+            "to": [ { "key_code": "left_control" } ],
+            "to_if_alone": [ { "key_code": "7", "modifiers": [ "left_option", "left_shift" ] } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "fn" },
+            "conditions": [ {
+                "type": "device_if",
+                "identifiers": [ { "product_id": 832, "vendor_id": 1452, "is_keyboard": true } ]
+            } ],
+            "to": [ { "key_code": "fn" } ],
+            "to_if_alone": [ { "key_code": "7", "modifiers": [ "left_option" ] } ],
+            "type": "basic"
+            } ]    
+        },{
+        "description": "Switch # to ; and < to #; and right_option+L to paragraph",
+        "manipulators": [ {
+            "from": { "key_code": "backslash" },
+            "to": [ { "key_code": "comma", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "grave_accent_and_tilde" },
+            "to": [ { "key_code": "backslash" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "l", "modifiers": [ "right_option" ] },
+            "to": [ { "key_code": "3", "modfiers": [ "left_shift" ] } ],
+            "type": "basic"
+            } ]
+        },{
+        "description": "Toggle Karabiner profiles with hyper+^ and hyper+esc",
+        "manipulators": [ {
+            "from": { "key_code": "non_us_backslash", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'fertigt_numpad' && osascript -e 'display notification \"fertigt_numpad\" with title \"Switch Karabiner Profile\"'" } ],
+            "to_after_key_up": [ { "set_variable": { "name": "karabiner_profile_toggled", "value": 1 } } ],
+            "conditions": [ {
+                "type": "variable_if",
+                "name": "karabiner_profile_toggled",
+                "value": 0
+            } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "non_us_backslash", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'fertigt_test' && osascript -e 'display notification \"fertigt_test\" with title \"Switch Karabiner Profile\"'" } ],
+            "to_after_key_up": [ { "set_variable": { "name": "karabiner_profile_toggled", "value": 0 } } ],
+            "conditions": [ {
+                "type": "variable_if",
+                "name": "karabiner_profile_toggled",
+                "value": 1
+            } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "escape", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'fertigt_off' && osascript -e 'display notification \"fertigt_off\" with title \"Switch Karabiner Profile\"'" } ],
+            "to_after_key_up": [ { "set_variable": { "name": "karabiner_off", "value": 1 } } ],
+            "conditions": [ {
+                "type": "variable_if",
+                "name": "karabiner_off",
+                "value": 0
+            } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "escape", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "shell_command": "'/Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli' --select-profile 'fertigt_test' && osascript -e 'display notification \"fertigt_test\" with title \"Switch Karabiner Profile\"'" } ],
+            "to_after_key_up": [ { "set_variable": { "name": "karabiner_off", "value": 0 } } ],
+            "conditions": [ {
+                "type": "variable_if",
+                "name": "karabiner_off",
+                "value": 1
+            } ],
+            "type": "basic"
+            } ]
+        },{
+        "description": "Change hyper+< to focus next window default macos shortcut",
+        "manipulators": [ {
+            "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+            "to": [ { "key_code": "equal_sign", "modifiers": [ "left_command", "left_shift" ] } ],
+            "type": "basic" 
+            } ]
+        },{
+        "description": "Virtual Numpad Mappings for TKL keyboards",
+        "manipulators": [ {
+            "from": { "key_code": "0" },
+            "to": [ { "key_code": "7", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "hyphen" },
+            "to": [ { "key_code": "close_bracket", "modifiers": [ "left_shift" ] } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "equal_sign" },
+            "to": [ { "key_code": "slash" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "o" },
+            "to": [ { "key_code": "keypad_7" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "p" },
+            "to": [ { "key_code": "keypad_8" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "open_bracket" },
+            "to": [ { "key_code": "keypad_9" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "l" },
+            "to": [ { "key_code": "keypad_4" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "semicolon" },
+            "to": [ { "key_code": "keypad_5" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "quote" },
+            "to": [ { "key_code": "keypad_6" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "comma" },
+            "to": [ { "key_code": "keypad_1" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "period" },
+            "to": [ { "key_code": "keypad_2" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "slash" },
+            "to": [ { "key_code": "keypad_3" } ],
+            "type": "basic"
+            },{
+            "from": { "key_code": "right_command" },
+            "to": [ { "key_code": "keypad_0" } ],
+            "type": "basic"
+            } ]
+        }
+    ]
+}
