@@ -10,6 +10,8 @@ set smartindent
 " set line numbers
 set nu
 set relativenumber
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber
 
 " do not copy line numbers when copy&pasting with mouse
 se mouse+=a
