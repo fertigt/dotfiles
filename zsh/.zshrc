@@ -8,6 +8,36 @@ setopt autocd
 
 zle_highlight=('paste:none')
 
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+
+# Change cursor shape for different vi modes.
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'block' ]]; then
+    echo -ne '\e[2 q'
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+    echo -ne '\e[6 q'
+  fi
+}
+
+zle -N zle-keymap-select
+zle-line-init() {
+    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+    echo -ne "\e[5 q"
+}
+
+zle -N zle-line-init
+echo -ne '\e[5 q' # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+
+bindkey "^?" backward-delete-char
+bindkey "^f" autosuggest-accept
+
 # Usage: zsh_load_plugin repo_url plugin_name
 #        or just zsh_load_plugin repo_url
 function zsh_load_plugin() {
@@ -39,6 +69,7 @@ bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 
 zsh_load_plugin "MichaelAquilina/zsh-auto-notify" "auto-notify"
+# export AUTO_NOTIFY_IGNORE+=("bat")
 
 zsh_load_plugin "MichaelAquilina/zsh-you-should-use" "you-should-use"
 export YSU_MESSAGE_POSITION="after"
@@ -51,7 +82,9 @@ fpath=($ZDOTDIR/completions $fpath)
 autoload -Uz compinit && compinit -i
 # Disable sort when completing 'git checkout'
 zstyle ':completion:*:git-checkout:*' sort false
-
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z} l:|=* r:|=*'
+zstyle ':completion:*:*:-command-:*' matcher 'm:{a-zA-Z}={A-Za-z}'
+ 
 source ~/.fzf.zsh
 _fzf_comprun() {
   local command=$1
