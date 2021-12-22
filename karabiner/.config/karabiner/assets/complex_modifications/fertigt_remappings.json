@@ -36,6 +36,25 @@
                 "type": "basic"
             } ]
         },{
+            "description": "Global arrow keys on hyper+hjkl",
+            "manipulators": [ {
+                "from": { "key_code": "h", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+                "to": [ { "key_code": "left_arrow" } ],
+                "type": "basic" 
+            },{
+                "from": { "key_code": "j", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+                "to": [ { "key_code": "down_arrow" } ],
+                "type": "basic" 
+            },{
+                "from": { "key_code": "k", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+                "to": [ { "key_code": "up_arrow" } ],
+                "type": "basic" 
+            },{
+                "from": { "key_code": "l", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+                "to": [ { "key_code": "right_arrow" } ],
+                "type": "basic" 
+            } ]
+        },{
             "description": "Change hyper+< to focus next window default macos shortcut",
             "manipulators": [ {
                 "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
@@ -132,6 +151,10 @@
         },{
             "description": "Open Mainly Used Apps",
             "manipulators": [ {
+                "from": { "key_code": "y", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+                "to": [ { "shell_command": "open -a '/Applications/Sublime Text.app'" } ],
+                "type": "basic" 
+            },{
                 "from": { "key_code": "u", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
                 "to": [ { "shell_command": "open -a '/Applications/WhatsApp.app'" } ],
                 "type": "basic" 
@@ -148,18 +171,6 @@
                 "to": [ { "shell_command": "open -a '/Applications/Adobe Acrobat DC/Adobe Acrobat.app'" } ],
                 "type": "basic" 
             },{
-                "from": { "key_code": "j", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
-                "to": [ { "shell_command": "open -a '/Applications/Sublime Text.app'" } ],
-                "type": "basic" 
-            },{
-                "from": { "key_code": "k", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
-                "to": [ { "shell_command": "open -a '/Applications/KeePassXC.app'" } ],
-                "type": "basic" 
-            },{
-                "from": { "key_code": "l", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
-                "to": [ { "shell_command": "open -a '/Applications/IntelliJ Idea.app'" } ],
-                "type": "basic" 
-            },{
                 "from": { "key_code": "semicolon", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
                 "to": [ { "shell_command": "open -a '/Applications/Signal.app'" } ],
                 "type": "basic" 
@@ -172,12 +183,20 @@
                 "to": [ { "shell_command": "open -a '/Applications/Visual Studio Code.app'" } ],
                 "type": "basic" 
             },{
+                "from": { "key_code": "b", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+                "to": [ { "shell_command": "open -a '/Applications/IntelliJ Idea.app'" } ],
+                "type": "basic" 
+            },{
                 "from": { "key_code": "n", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
                 "to": [ { "shell_command": "open -a '/Applications/kitty.app'" } ],
                 "type": "basic" 
             },{
                 "from": { "key_code": "m", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
                 "to": [ { "shell_command": "open -a '/Applications/Path Finder.app'" } ],
+                "type": "basic" 
+            },{
+                "from": { "key_code": "comma", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
+                "to": [ { "shell_command": "open -a '/Applications/KeePassXC.app'" } ],
                 "type": "basic" 
             } ]  
         },{
