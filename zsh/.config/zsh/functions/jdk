@@ -1,0 +1,7 @@
+# Usage: jdk javaversion
+#        javaversion can be 8, 11, 17, i.e. 
+function jdk() {
+    version=$1
+    export JAVA_HOME="/usr/local/opt/openjdk@$version"
+    java -version
+}

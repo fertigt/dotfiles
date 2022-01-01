@@ -38,23 +38,10 @@ preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 bindkey "^?" backward-delete-char
 bindkey "^f" autosuggest-accept
 
-# Usage: zsh_load_plugin repo_url plugin_name
-#        or just zsh_load_plugin repo_url
-function zsh_load_plugin() {
-    PLUGIN_REPO_NAME=$(echo $1 | cut -d "/" -f 2)
-    if [ $# -eq 2 ]; then
-        PLUGIN_NAME=$2
-    else
-        PLUGIN_NAME=$PLUGIN_REPO_NAME
-    fi
+# Functions
 
-    if [ ! -d "$ZDOTDIR/plugins/$PLUGIN_REPO_NAME" ]; then
-        git clone "https://github.com/$1.git" "$ZDOTDIR/plugins/$PLUGIN_REPO_NAME"
-    fi
-
-    source "$ZDOTDIR/plugins/$PLUGIN_REPO_NAME/$PLUGIN_NAME.plugin.zsh" || \
-    source "$ZDOTDIR/plugins/$PLUGIN_REPO_NAME/$PLUGIN_NAME.zsh"
-}
+fpath=($ZDOTDIR/functions $fpath)
+autoload -Uz $fpath[1]/*(.:t) 
 
 # Plugins
 zsh_load_plugin "zsh-users/zsh-autosuggestions"
