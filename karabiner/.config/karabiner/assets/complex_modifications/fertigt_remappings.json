@@ -152,7 +152,7 @@
             "description": "Open Mainly Used Apps",
             "manipulators": [ {
                 "from": { "key_code": "y", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
-                "to": [ { "shell_command": "open -a '/Applications/Sublime Text.app'" } ],
+                "to": [ { "shell_command": "open -a '/Applications/Obsidian.app'" } ],
                 "type": "basic" 
             },{
                 "from": { "key_code": "u", "modifiers": { "mandatory": [ "right_shift", "right_command", "right_control", "right_option" ] } },
