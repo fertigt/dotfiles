@@ -8,9 +8,13 @@ zstyle ':vcs_info:*' check-for-changes false
 zstyle ':vcs_info:*' check-for-staged-changes true
 zstyle ':vcs_info:git:*' formats " %B%{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]%}%{$fg[magenta]%} %b%{$fg[blue]%})"
 
+function virtual_env_info {
+    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`')'
+}
+
 precmd() {
     vcs_info
 
     PROMPT="%(?.%F{green}√.%F{red}?%?)%f %B%F{white}%3~ %B "
-    RPROMPT="${vcs_info_msg_0_}"
+    RPROMPT="%F{green}$(virtual_env_info)${vcs_info_msg_0_}"
 }
