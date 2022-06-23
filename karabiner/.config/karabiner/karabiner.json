@@ -741,12 +741,47 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "product_id": 835,
+                                                "vendor_id": 1452
+                                            }
+                                        ],
+                                        "type": "device_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "8"
                                 },
                                 "to": [
                                     {
                                         "key_code": "grave_accent_and_tilde"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "product_id": 835,
+                                                "vendor_id": 1452
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "8"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "non_us_backslash"
                                     }
                                 ],
                                 "type": "basic"
@@ -768,12 +803,50 @@
                                 "type": "basic"
                             },
                             {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "product_id": 835,
+                                                "vendor_id": 1452
+                                            }
+                                        ],
+                                        "type": "device_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "9"
                                 },
                                 "to": [
                                     {
                                         "key_code": "grave_accent_and_tilde",
+                                        "modifiers": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
+                                                "product_id": 835,
+                                                "vendor_id": 1452
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "9"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "non_us_backslash",
                                         "modifiers": [
                                             "left_shift"
                                         ]
@@ -1309,6 +1382,11 @@
                                             {
                                                 "is_keyboard": true,
                                                 "vendor_id": 1133
+                                            },
+                                            {
+                                                "is_keyboard": true,
+                                                "product_id": 835,
+                                                "vendor_id": 1452
                                             }
                                         ],
                                         "type": "device_if"
@@ -1331,6 +1409,11 @@
                                             {
                                                 "is_keyboard": true,
                                                 "vendor_id": 1133
+                                            },
+                                            {
+                                                "is_keyboard": true,
+                                                "product_id": 835,
+                                                "vendor_id": 1452
                                             }
                                         ],
                                         "type": "device_if"
@@ -1382,7 +1465,35 @@
                                         "identifiers": [
                                             {
                                                 "is_keyboard": true,
+                                                "product_id": 835,
+                                                "vendor_id": 1452
+                                            }
+                                        ],
+                                        "type": "device_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "non_us_backslash"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "identifiers": [
+                                            {
+                                                "is_keyboard": true,
                                                 "vendor_id": 1133
+                                            },
+                                            {
+                                                "is_keyboard": true,
+                                                "product_id": 835,
+                                                "vendor_id": 1452
                                             }
                                         ],
                                         "type": "device_if"
