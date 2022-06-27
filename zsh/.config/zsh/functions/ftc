@@ -1,0 +1,8 @@
+# Usage: ftc repo_url user
+#   repo_url has to be git url not https
+function ftc() {
+    user=${2:-fertigto}
+    repo_url=$1
+    repo_url="${repo_url:0:4}$user.${repo_url:4}"
+    git clone $repo_url
+}
