@@ -65,7 +65,8 @@ export YSU_MODE=BESTMATCH
 zsh_load_plugin "agkozak/zsh-z"
 
 # Completions
-fpath=($ZDOTDIR/completions $fpath)
+# fpath=($ZDOTDIR/completions $fpath)
+fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
 autoload -Uz compinit && compinit -i
 # Disable sort when completing 'git checkout'
 zstyle ':completion:*:git-checkout:*' sort false
