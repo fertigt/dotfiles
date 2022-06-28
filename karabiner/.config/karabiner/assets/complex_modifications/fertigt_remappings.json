@@ -8,7 +8,7 @@
                     "type": "device_if",
                     "identifiers": [ { "vendor_id": 1133, "is_pointing_device": true } ]
                 } ],
-                "to": [ { "key_code": "w", "modifiers": [ "left_command" ] } ],
+                "to": [ { "key_code": "w", "modifiers": [ "right_command" ] } ],
                 "type": "basic" 
             },{
                 "from": { "pointing_button": "button4" },
@@ -16,7 +16,7 @@
                     "type": "device_if",
                     "identifiers": [ { "vendor_id": 1133, "is_pointing_device": true } ]
                 } ],
-                "to": [ { "key_code": "5", "modifiers": [ "left_command", "left_option" ] } ],
+                "to": [ { "key_code": "quote", "modifiers": [ "left_command" ] } ],
                 "type": "basic" 
             },{
                 "from": { "pointing_button": "button5" },
@@ -24,7 +24,7 @@
                     "type": "device_if",
                     "identifiers": [ { "vendor_id": 1133, "is_pointing_device": true } ]
                 } ],
-                "to": [ { "key_code": "6", "modifiers": [ "left_command", "left_option" ] } ],
+                "to": [ { "key_code": "semicolon", "modifiers": [ "left_command" ] } ],
                 "type": "basic" 
             } ]
         },{

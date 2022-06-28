@@ -37,7 +37,7 @@
                                     {
                                         "key_code": "w",
                                         "modifiers": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 ],
@@ -60,10 +60,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "5",
+                                        "key_code": "quote",
                                         "modifiers": [
-                                            "left_command",
-                                            "left_option"
+                                            "left_command"
                                         ]
                                     }
                                 ],
@@ -86,10 +85,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "6",
+                                        "key_code": "semicolon",
                                         "modifiers": [
-                                            "left_command",
-                                            "left_option"
+                                            "left_command"
                                         ]
                                     }
                                 ],
@@ -1973,7 +1971,7 @@
                                     {
                                         "key_code": "w",
                                         "modifiers": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 ],
@@ -1996,10 +1994,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "5",
+                                        "key_code": "quote",
                                         "modifiers": [
-                                            "left_command",
-                                            "left_option"
+                                            "left_command"
                                         ]
                                     }
                                 ],
@@ -2022,10 +2019,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "6",
+                                        "key_code": "semicolon",
                                         "modifiers": [
-                                            "left_command",
-                                            "left_option"
+                                            "left_command"
                                         ]
                                     }
                                 ],
@@ -2867,7 +2863,7 @@
                                     {
                                         "key_code": "w",
                                         "modifiers": [
-                                            "left_command"
+                                            "right_command"
                                         ]
                                     }
                                 ],
@@ -2890,10 +2886,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "5",
+                                        "key_code": "quote",
                                         "modifiers": [
-                                            "left_command",
-                                            "left_option"
+                                            "left_command"
                                         ]
                                     }
                                 ],
@@ -2916,10 +2911,9 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "6",
+                                        "key_code": "semicolon",
                                         "modifiers": [
-                                            "left_command",
-                                            "left_option"
+                                            "left_command"
                                         ]
                                     }
                                 ],
