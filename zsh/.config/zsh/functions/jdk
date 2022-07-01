@@ -2,6 +2,6 @@
 #        javaversion can be 8, 11, 17, i.e. 
 function jdk() {
     version=$1
-    export JAVA_HOME="/opt/homebrew/opt/openjdk@$version"
+    export JAVA_HOME="$(brew --prefix openjdk@$version)"
     java -version
 }

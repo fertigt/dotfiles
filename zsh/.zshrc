@@ -102,3 +102,7 @@ alias ganachefork="ganache --fork https://mainnet.infura.io/v3/fdd096bb3d3a43df8
 
 # Prompt
 source "$ZDOTDIR/zsh-prompt"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
