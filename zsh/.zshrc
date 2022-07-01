@@ -98,6 +98,7 @@ alias ga="git add"
 alias gc="git commit -m"
 alias gpl="git pull"
 alias gps="git push"
+alias ganachefork="ganache --fork https://mainnet.infura.io/v3/fdd096bb3d3a43df80dd08d6a0317560@$(curl -s https://api.blockcypher.com/v1/eth/main | jq --compact-output '.height')"
 
 # Prompt
 source "$ZDOTDIR/zsh-prompt"
