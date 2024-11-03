@@ -41,7 +41,7 @@ bindkey "^f" autosuggest-accept
 # Functions
 
 fpath=($ZDOTDIR/functions $fpath)
-autoload -Uz $fpath[1]/*(.:t) 
+autoload -Uz $fpath[1]/*(.:t)
 
 # Plugins
 zsh_load_plugin "zsh-users/zsh-autosuggestions"
@@ -72,7 +72,7 @@ autoload -Uz compinit && compinit -i
 zstyle ':completion:*:git-checkout:*' sort false
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z} l:|=* r:|=*'
 zstyle ':completion:*:*:-command-:*' matcher 'm:{a-zA-Z}={A-Za-z}'
- 
+
 source ~/.fzf.zsh
 _fzf_comprun() {
   local command=$1
@@ -89,7 +89,7 @@ zsh_load_plugin "Aloxaf/fzf-tab"
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --icons $realpath -a --group-directories-first'
 
 # Aliases
-alias ls="exa --icons -a --group-directories-first"
+alias ls="eza --icons -a --group-directories-first"
 alias ll="ls -l --git"
 alias lg="ll --tree -I .git --git-ignore"
 alias gis="git status"
@@ -98,11 +98,15 @@ alias ga="git add"
 alias gc="git commit -m"
 alias gpl="git pull"
 alias gps="git push"
-alias ganachefork="ganache --fork https://mainnet.infura.io/v3/fdd096bb3d3a43df80dd08d6a0317560@$(curl -s https://api.blockcypher.com/v1/eth/main | jq --compact-output '.height')"
 
 # Prompt
 source "$ZDOTDIR/zsh-prompt"
 
+# Python
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export PATH="$PATH:/Users/fertigt/.foundry/bin"
