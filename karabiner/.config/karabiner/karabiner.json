@@ -992,7 +992,7 @@
                                     "key_code": "u",
                                     "modifiers": { "mandatory": ["right_shift", "right_command", "right_control", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/WhatsApp.app'" }],
+                                "to": [{ "shell_command": "open -a '/Applications/Microsoft Teams.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -1000,7 +1000,7 @@
                                     "key_code": "i",
                                     "modifiers": { "mandatory": ["right_shift", "right_command", "right_control", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Safari.app'" }],
+                                "to": [{ "shell_command": "open -a '/Applications/Google Chrome.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -1064,7 +1064,7 @@
                                     "key_code": "m",
                                     "modifiers": { "mandatory": ["right_shift", "right_command", "right_control", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Path Finder.app'" }],
+                                "to": [{ "shell_command": "open -a '/Applications/Marta.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -1088,7 +1088,7 @@
                                     "key_code": "t",
                                     "modifiers": { "mandatory": ["right_shift", "right_command", "right_control", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/System/Applications/Calendar.app'" }],
+                                "to": [{ "shell_command": "open -a '/Applications/BusyCal.app'" }],
                                 "type": "basic"
                             }
                         ]
@@ -1552,7 +1552,7 @@
                                     "key_code": "u",
                                     "modifiers": { "mandatory": ["right_shift", "right_command", "right_control", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/WhatsApp.app'" }],
+                                "to": [{ "shell_command": "open -a '/Applications/Microsoft Teams.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -1560,7 +1560,7 @@
                                     "key_code": "i",
                                     "modifiers": { "mandatory": ["right_shift", "right_command", "right_control", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Safari.app'" }],
+                                "to": [{ "shell_command": "open -a '/Applications/Google Chrome.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -1624,7 +1624,7 @@
                                     "key_code": "m",
                                     "modifiers": { "mandatory": ["right_shift", "right_command", "right_control", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/Applications/Path Finder.app'" }],
+                                "to": [{ "shell_command": "open -a '/Applications/Marta.app'" }],
                                 "type": "basic"
                             },
                             {
@@ -1648,7 +1648,7 @@
                                     "key_code": "t",
                                     "modifiers": { "mandatory": ["right_shift", "right_command", "right_control", "right_option"] }
                                 },
-                                "to": [{ "shell_command": "open -a '/System/Applications/Calendar.app'" }],
+                                "to": [{ "shell_command": "open -a '/Applications/BusyCal.app'" }],
                                 "type": "basic"
                             }
                         ]
